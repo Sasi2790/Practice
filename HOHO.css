@@ -1,0 +1,43 @@
+header  {
+    background-color: teal;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    float: left;
+}
+
+
+.img {
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+}
+
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: teal;
+}
