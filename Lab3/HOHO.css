@@ -30,7 +30,7 @@ form button {
 header  {
     background-color: teal;
     text-align: center;
-    color: white;
+    color: black;
     padding: 1rem;
 }
 
@@ -84,4 +84,32 @@ footer {
     color: white;
     text-align: center;
     background-color: teal;
+}
+
+@media screen and (max-width: 600px) {
+    header + div { 
+        display: inline-block;
+    }
+
+    ul {
+        display: flex;
+        margin: 10px;
+        text-align: center;
+    }
+
+    li {
+        border-right: 2px solid lightgray;
+    }
+    li:last-child {
+        border-right: 0;
+    }
+
+    a {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    a:hover {
+        background-color: teal;
+    }
 }
