@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-image: url(../ImageforPractice/CalculatorImg.png);
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    margin: 5px;
+}
+
+#calc {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 92%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.operator {
+    background-color: hsl(35, 100%, 50%);
+}
+
+.operator:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+.operator:active {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.C, .CE {
+    font-size: 2.5rem;
+}

@@ -21,7 +21,7 @@ function handleSymbol(symbol){
             break;
         case '=':
             if (previousOperator === null){
-                return
+                return;
             }
             flushOperation(parseInt(buffer));
             previousOperator = null;
