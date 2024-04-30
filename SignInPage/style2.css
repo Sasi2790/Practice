@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+}
+
+/* Usually, this will be body, not section */
+section {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    max-width: 350px;
+    background: #F8F9FD;
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 5px solid #d4e5ff;
+    box-shadow: rgba(141, 213, 247, 0.87) 0px 30px 30px -20px;
+    margin: 20px;
+}
+
+
+h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(16, 137, 211);
+}
+
+form {
+    margin-top: 20px;
+}
+
+.inputBox input {
+    width: 19rem;
+    background: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: #cff0ff 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.inputBox input:focus {
+    outline: none;
+    border-inline: 2px solid #12B1D1;
+    transition: border-inline 0.3s ease-in-out;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s !important;
+}
+
+.links {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.links a {
+    font-size: 14px;
+    color: #0099ff;
+    text-decoration: none;
+}
+
+.links a:nth-child(2) {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+}
+
+.inputBox input[type="submit"] {
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(16, 137, 211), rgb(18, 177, 209));
+    color: #fff;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: rgba(133, 189, 215, 0.87) 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.08em;
+}
+
+.inputBox input[type="submit"]:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(133, 189, 215, 0.87) 0px 23px 10px -20px;
+}
+
+.inputBox input[type="submit"]:active {
+    transform: scale(0.95);
+    box-shadow: rgba(133, 189, 215, 0.87) 0px 15px 10px -10px;
+}
+
+
+
